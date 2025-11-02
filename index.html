@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercicio 1</h1>
+    
+    <label for="numeros">Selecione o numero que deseja multiplicar:</label>
+      <select id="numeros">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+      <button type="button" onclick="calcular()">Calcular!</button><br><br>
+
+      <p id="exib"></p><hr>
+
+      <!--exercicio 2 -->
+      <h1>Exercicio 2</h1>
+
+      <p>Digite um numero e verifique se ele é positivo(+) , negativo(-) ou nulo(0)</p>
+
+      <input type="number" id="numero3">
+      <button type="button" onclick="decidir()">Verificar numero</button><br>
+      <p id="exibi"></p><hr>
+
+      <!--Exercicio 3 -->
+      <h1>Exercicio 3</h1>
+      <p>Digite um numero e veja se ele é Primo ou não</p>
+      <input type="number" id="nummm">
+      <button type="button" onclick="verificar()">Verificar</button>
+      <p id="exibs"></p><hr>
+
+      <!--Exercicio 4 -->
+      <h1>Exercicio 4</h1>
+      <p>*Digite quantos minutos e segundos o nadador levou para acabar a prova!</p>
+      <p>T1 - Nadador 1</p>
+      <input type="text" id="T1" placeholder="Digite o tempo">
+      <p>T2 - Nadador 2</p>
+      <input type="text" id="T2" placeholder="Digite o tempo">
+      <p>T3 - Nadador 3</p>
+      <input type="text" id="T3" placeholder="Digite o tempo"><br><br>
+
+      <button type="button" onclick="classificar()">Revelar classificação</button>
+
+      <p id="most"></p><hr>
+
+      <!--Exeercicio 5 -->
+      <h1>Exercicio 5</h1>
+      <p>M (Idade de dona monica):</p>
+      <input type="number" id="M" placeholder="Digite a idade:">
+      <p>A (Idade do primeiro filho):</p>
+      <input type="number" id="A" placeholder="Digite a idade:">
+      <p>B (Idade do segundo filho):</p>
+      <input type="number" id="B" placeholder="Digite a idade:"><br><br>
+
+      <button type="button" onclick="descobrir()">Descobrir a idade do segundo filho</button>
+
+      <p id="s"></p>
+      <p id="n"></p>
+      </div>
+</body> 
+</html>

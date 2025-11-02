@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  color: #333;
+}
+
+.container {
+  background: white;
+  width: 100%;
+  max-width: 600px; /* mais estreita que antes */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+  color: #4e54c8;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #8f94fb;
+  padding-bottom: 5px;
+}
+
+p, label {
+  font-size: 1rem;
+  margin-top: 10px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #8f94fb;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 10px rgba(78, 84, 200, 0.3);
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8f94fb;
+  transform: translateY(-2px);
+}
+
+p#exib, p#exibi, p#exibs, p#most, p#s, p#n {
+  background: #f6f6ff;
+  border-left: 5px solid #4e54c8;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e5e5e5;
+  margin: 25px 0;
+}
